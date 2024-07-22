@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Assignments</title>
+    <style>
+      .uber-button{
+       color: white;
+       background-color: black;
+       height: 36px;
+       width: 90px;
+       border: none;
+       margin-left: 8px;
+       cursor: pointer;
+       transition: hover 0.15s;
+     }
+   
+     .uber-button:hover{
+       opacity: 0.7;
+     }
+   
+     .amazon-button{
+       background-color: rgb(255,216,20);
+       color: black;
+       height: 36px;
+       width: 120px;
+       border-radius: 18px;
+       border: none;
+       margin-left: 8px;
+       cursor: pointer;
+       transition: background-color 0.2s;
+     }
+     
+     .amazon-button:hover{
+       background-color: rgb(255,164,28);
+     }
+   
+     .github-button{
+       color: white;
+       background-color: rgb(46,164,79);
+       margin-left: 8px;
+       border-radius: 3px;
+       border: none;
+       width: 70px;
+       height: 30px;
+       cursor: pointer;
+       transition: shadow 0.2s;
+     }
+     
+     .github-button:hover{
+       box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
+     }
+   
+     .bootstrap-button1{
+       color: white;
+       background-color: rgb(121,82,179);
+       width: 90px;
+       height: 30px;
+       border: none;
+       margin-left: 8px;
+       border-radius: 3px;
+       font-weight: bold;
+       font-size: 11px;
+       cursor: pointer;
+       transition: background-color 0.2s;
+     }
+   
+     .bootstrap-button1:hover{
+       background-color: rgb(88, 39, 161);
+     }
+   
+     .bootstrap-button2{
+       color: rgb(108,117,125);
+       background-color: white;
+       border-style: solid;
+       border-color: rgb(108,117,125);
+       border-width: 1px;
+       width: 90px;
+       height: 30px;
+       margin-left: 8px;
+       border-radius: 3px;
+       font-size: 11px;
+       cursor: pointer;
+       transition: background-color 0.2s,
+       color 0.2s;
+     }
+   
+     .bootstrap-button2:hover{
+       background-color: rgb(108,117,125);
+       color: white;
+     }
+   
+     .linkedin-button1{
+       width: 200px;
+       background-color: rgb(10,102,194);
+       border-radius: 18px;
+       border: none;
+       height: 36px;
+       margin-left: 8px;
+       color: white;
+       font-weight: bold;
+       font-size: 12px;
+       cursor: pointer;
+       transition: background-color 0.2s;
+     }
+   
+     .linkedin-button1:hover{
+       background-color: rgb(8, 81, 153);
+     }
+   
+     .linkedin-button2{
+       border-color: rgb(10,102,194);
+       background-color: white;
+       color: rgb(10,102,194);
+       border-radius: 18px;
+       height: 36px;
+       margin-left: 8px;
+       border-style: solid;
+       border-width: 1px;
+       width: 70px;
+       cursor: pointer;
+       transition: border-width 0.05s;
+     }
+   
+     .linkedin-button2:hover{
+       border-width: 2px;
+       background-color: rgb(191, 212, 233);
+     }
+   
+     .amazon-link{
+       transition: color 0.05s;
+     }
+   
+     .amazon-link:hover{
+       color: rgb(165, 114, 21);
+     }
+   
+     .amazon-button1{
+       width: 100px;
+       background-color: rgb(255,216,20);
+       color: black;
+       height: 30px;
+       border-radius: 15px;
+       border: none;
+       cursor: pointer;
+       margin-right: 8px;
+       font-size: 11px;
+       transition: background-color 0.15s;
+     }
+   
+     .amazon-button1:hover{
+       background-color: rgb(190, 161, 15);;
+     }
+   
+     .amazon-button1:active{
+       opacity: 0.6;
+     }
+   
+     .amazon-button2{
+       width: 100px;
+       background-color: rgb(255,164,28);
+       color: black;
+       height: 30px;
+       border-radius: 15px;
+       border: none;
+       cursor: pointer;
+       font-size: 11px;
+       transition: background-color 0.15s;
+     }
+   
+     .amazon-button2:hover{
+       background-color: rgb(196, 126, 21);
+     }
+   
+     .amazon-button2:active{
+       opacity: 0.6;
+     }
+   
+     .pagination-button{
+       padding-top: 8px;
+       padding-bottom: 8px;
+       padding-left: 8px;
+       padding-right: 8px;
+       font-size: 10px;
+       cursor: pointer;
+     }
+   
+     .stretch-button{
+       margin-left: 8px;
+       background-color: green;
+       padding-left: 16px;
+       padding-right: 16px;
+       padding-top: 8px;
+       padding-bottom: 8px;
+       border: none;
+       color: white;
+       transition: padding-left 1s,
+       padding-right 1s,
+       padding-top 1s,
+       padding-bottom 1s;
+       cursor: pointer;
+     }
+   
+     .stretch-button:hover{
+       padding-left: 32px;
+       padding-right: 32px;
+       padding-top: 16px;
+       padding-bottom: 16px;
+     }
+   
+     .button-3d{
+       box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+       padding-left: 16px;
+       padding-right: 16px;
+       padding-top: 8px;
+       padding-bottom: 8px;
+       color: white;
+       background-color: green;
+       border: none;
+       margin-left: 8px;
+       transition: margin-top 0.05s,
+       margin-left 0.15s;
+       cursor: pointer;
+       margin-right: 10px;
+     }
+   
+     .button-3d:active{
+       margin-top: 3px;
+       margin-left: 11px;
+       box-shadow: none;
+     }
+   
+     .margin-padding-button{
+       background-color: green;
+       color: white;
+       margin-left: 6px;
+       margin-right: 6px;
+       padding-top: 6px;
+       padding-bottom: 6px;
+       padding-left: 14px;
+       padding-right: 14px;
+       border: none;
+   
+     }
+   
+     .margin-padding-button:hover{
+       padding-left: 20px;
+       padding-right: 20px;
+       margin-left: 0px;
+       margin-right: 0px;
+     }
+
+     .roundedimg{
+      width: 200px;
+      border-radius: 5px;
+     }
+
+     .squareimg{
+      width: 200px;
+      height: 200px;
+      object-position: center;
+     }
+
+     .circleimg{
+      width: 200px;
+      height: 200px;
+      border-radius: 100px;
+     }
+
+   </style>
+  </head>
+  <body>
+    <button class="uber-button">
+      Request now
+    </button>
+    
+    <button class="amazon-button">
+      Add to Cart
+    </button>
+    
+    <button class="github-button">
+      Sign up
+    </button>
+    
+    <button class="bootstrap-button1">
+      Get started
+    </button>
+    
+    <button class="bootstrap-button2">
+      Download
+    </button>
+    
+    <button class="linkedin-button1">
+      Apply to company website
+    </button>
+    
+    <button class="linkedin-button2">
+      Save
+    </button>
+    
+    <hr/>
+    
+    <a class='amazon-link' href="" >Back to Amazon</a>
+    <h2>Nike Black Running Shoes</h2>
+    <h4 style="color: rgb(0,118,0);">$39 - in stock.</h4>
+    <h5>Free delivery tomorrow.</h5>
+    
+    <button class="amazon-button1">
+      Add to Cart
+    </button>
+    
+    <button class="amazon-button2">
+      Buy now
+    </button>
+    
+    <hr/>
+    
+    <button class="pagination-button">Back</button>
+    <a href="">1</a>
+    <a href="">2</a>
+    <a href="">3</a>
+    <a href="">4</a>
+    <a href="">5</a>
+    <button class="pagination-button">Next</button>
+    
+    <button class="stretch-button">Stretch</button>
+    
+    <button class="button-3d">Click Me</button>
+    
+    <button class="margin-padding-button">One</button>
+    <button class="margin-padding-button">Two</button>
+    <button class="margin-padding-button">Three</button>
+    
+    <hr/>
+    
+    <img class='roundedimg' src="./thumbnail-1.webp">
+    <img class='squareimg' src="./thumbnail-1.webp">
+    <img class='circleimg' src="./thumbnail-1.webp">
+
+  </body>
+</html>
+
+
+
