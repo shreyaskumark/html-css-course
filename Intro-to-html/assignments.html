@@ -3,6 +3,11 @@
   <head>
     <title>Assignments</title>
     <style>
+      p{
+      margin-bottom: 0;
+      margin-top: 0;
+      }
+
       .uber-button{
        color: white;
        background-color: black;
@@ -266,6 +271,90 @@
       border-radius: 100px;
      }
 
+     .tahoma-font{
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size:large;
+      font-weight: bold;
+     }
+
+     .arial-font{
+      font-family: Arial, Helvetica, sans-serif;
+     }
+
+     .arial-black{
+      font-weight: 700;
+      font-size: large;
+     }
+
+     .arial-red{
+      color: rgb(225, 45, 45);
+      font-style:italic;
+     }
+
+     .verdana-font{
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+     }
+
+     .verdana-black{
+      font-weight: 600;
+      font-size: 16px;
+     }
+
+     .verdana-gray{
+      font-weight: 400;
+      color: gray;
+      font-size: 14px;
+      margin-bottom: 14px;
+     }
+
+     .verdana-width{
+      width: 300px;
+      margin-bottom: 12px;
+     }
+
+     .verdana-button{
+      border: none;
+      color: white;
+      background-color: rgb(7, 140, 7);
+      height: 20px;
+      width: 80px;
+      border-radius: 4px;
+      font-size: 11px;
+      cursor: pointer;
+     }
+
+     .verdana-button:active{
+       opacity: 0.6;
+     }
+
+     .arial-black-apple{
+      font-weight: 700;
+      font-size: 20px;
+      text-align: center;
+      margin-bottom: 12px;
+     }
+
+     .arial-text-apple{
+      text-align: center;
+      font-size: 12px;
+      margin-bottom: 12px;
+     }
+
+     .arial-link-apple{
+      color: rgb(45, 45, 253);
+      text-align: center;
+      font-size: 12px;
+      cursor: pointer;
+     }
+
+     .arial-link-apple:hover{
+      text-decoration: underline;
+     }
+
+     .arial-link-apple:active{
+       opacity: 0.6;
+     }
+
    </style>
   </head>
   <body>
@@ -336,6 +425,32 @@
     <img class='squareimg' src="./thumbnail-1.webp">
     <img class='circleimg' src="./thumbnail-1.webp">
 
+    <hr/>
+
+    <div class="tahoma-font">This is Tahoma Font</div>
+    <hr/>
+
+    <div class="arial-font">
+    <p class="arial-black">Biggest Deals of the Year!</p>
+    <p class="arial-red">Sales end Tuesday</p>
+    </div>
+    <hr/>
+
+    <div class="verdana-font">
+      <p class="verdana-black">HTML CSS Course</p>
+      <p class="verdana-gray">Beginner to Pro</p>
+      <p class="verdana-width">In this course, we'll learn the skills you need to become a developer.</p>
+      <button class="verdana-button">Get Started</button>
+    </div>
+    <hr/>
+
+    <div class="arial-font">
+      <p class="arial-black-apple">Shopping for your business?</p>
+      <p class="arial-text-apple">See how apple at Work can help.</p>
+      <p class="arial-link-apple">Learn more &#62 </p>
+    </div>
+    <hr/>
+    </body>
   </body>
 </html>
 
