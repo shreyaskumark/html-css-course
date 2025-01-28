@@ -2,360 +2,7 @@
 <html>
   <head>
     <title>Assignments</title>
-    <style>
-      p{
-      margin-bottom: 0;
-      margin-top: 0;
-      }
-
-      .uber-button{
-       color: white;
-       background-color: black;
-       height: 36px;
-       width: 90px;
-       border: none;
-       margin-left: 8px;
-       cursor: pointer;
-       transition: hover 0.15s;
-     }
-   
-     .uber-button:hover{
-       opacity: 0.7;
-     }
-   
-     .amazon-button{
-       background-color: rgb(255,216,20);
-       color: black;
-       height: 36px;
-       width: 120px;
-       border-radius: 18px;
-       border: none;
-       margin-left: 8px;
-       cursor: pointer;
-       transition: background-color 0.2s;
-     }
-     
-     .amazon-button:hover{
-       background-color: rgb(255,164,28);
-     }
-   
-     .github-button{
-       color: white;
-       background-color: rgb(46,164,79);
-       margin-left: 8px;
-       border-radius: 3px;
-       border: none;
-       width: 70px;
-       height: 30px;
-       cursor: pointer;
-       transition: shadow 0.2s;
-     }
-     
-     .github-button:hover{
-       box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
-     }
-   
-     .bootstrap-button1{
-       color: white;
-       background-color: rgb(121,82,179);
-       width: 90px;
-       height: 30px;
-       border: none;
-       margin-left: 8px;
-       border-radius: 3px;
-       font-weight: bold;
-       font-size: 11px;
-       cursor: pointer;
-       transition: background-color 0.2s;
-     }
-   
-     .bootstrap-button1:hover{
-       background-color: rgb(88, 39, 161);
-     }
-   
-     .bootstrap-button2{
-       color: rgb(108,117,125);
-       background-color: white;
-       border-style: solid;
-       border-color: rgb(108,117,125);
-       border-width: 1px;
-       width: 90px;
-       height: 30px;
-       margin-left: 8px;
-       border-radius: 3px;
-       font-size: 11px;
-       cursor: pointer;
-       transition: background-color 0.2s,
-       color 0.2s;
-     }
-   
-     .bootstrap-button2:hover{
-       background-color: rgb(108,117,125);
-       color: white;
-     }
-   
-     .linkedin-button1{
-       width: 200px;
-       background-color: rgb(10,102,194);
-       border-radius: 18px;
-       border: none;
-       height: 36px;
-       margin-left: 8px;
-       color: white;
-       font-weight: bold;
-       font-size: 12px;
-       cursor: pointer;
-       transition: background-color 0.2s;
-     }
-   
-     .linkedin-button1:hover{
-       background-color: rgb(8, 81, 153);
-     }
-   
-     .linkedin-button2{
-       border-color: rgb(10,102,194);
-       background-color: white;
-       color: rgb(10,102,194);
-       border-radius: 18px;
-       height: 36px;
-       margin-left: 8px;
-       border-style: solid;
-       border-width: 1px;
-       width: 70px;
-       cursor: pointer;
-       transition: border-width 0.05s;
-     }
-   
-     .linkedin-button2:hover{
-       border-width: 2px;
-       background-color: rgb(191, 212, 233);
-     }
-   
-     .amazon-link{
-       transition: color 0.05s;
-     }
-   
-     .amazon-link:hover{
-       color: rgb(165, 114, 21);
-     }
-   
-     .amazon-button1{
-       width: 100px;
-       background-color: rgb(255,216,20);
-       color: black;
-       height: 30px;
-       border-radius: 15px;
-       border: none;
-       cursor: pointer;
-       margin-right: 8px;
-       font-size: 11px;
-       transition: background-color 0.15s;
-     }
-   
-     .amazon-button1:hover{
-       background-color: rgb(190, 161, 15);;
-     }
-   
-     .amazon-button1:active{
-       opacity: 0.6;
-     }
-   
-     .amazon-button2{
-       width: 100px;
-       background-color: rgb(255,164,28);
-       color: black;
-       height: 30px;
-       border-radius: 15px;
-       border: none;
-       cursor: pointer;
-       font-size: 11px;
-       transition: background-color 0.15s;
-     }
-   
-     .amazon-button2:hover{
-       background-color: rgb(196, 126, 21);
-     }
-   
-     .amazon-button2:active{
-       opacity: 0.6;
-     }
-   
-     .pagination-button{
-       padding-top: 8px;
-       padding-bottom: 8px;
-       padding-left: 8px;
-       padding-right: 8px;
-       font-size: 10px;
-       cursor: pointer;
-     }
-   
-     .stretch-button{
-       margin-left: 8px;
-       background-color: green;
-       padding-left: 16px;
-       padding-right: 16px;
-       padding-top: 8px;
-       padding-bottom: 8px;
-       border: none;
-       color: white;
-       transition: padding-left 1s,
-       padding-right 1s,
-       padding-top 1s,
-       padding-bottom 1s;
-       cursor: pointer;
-     }
-   
-     .stretch-button:hover{
-       padding-left: 32px;
-       padding-right: 32px;
-       padding-top: 16px;
-       padding-bottom: 16px;
-     }
-   
-     .button-3d{
-       box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
-       padding-left: 16px;
-       padding-right: 16px;
-       padding-top: 8px;
-       padding-bottom: 8px;
-       color: white;
-       background-color: green;
-       border: none;
-       margin-left: 8px;
-       transition: margin-top 0.05s,
-       margin-left 0.15s;
-       cursor: pointer;
-       margin-right: 10px;
-     }
-   
-     .button-3d:active{
-       margin-top: 3px;
-       margin-left: 11px;
-       box-shadow: none;
-     }
-   
-     .margin-padding-button{
-       background-color: green;
-       color: white;
-       margin-left: 6px;
-       margin-right: 6px;
-       padding-top: 6px;
-       padding-bottom: 6px;
-       padding-left: 14px;
-       padding-right: 14px;
-       border: none;
-   
-     }
-   
-     .margin-padding-button:hover{
-       padding-left: 20px;
-       padding-right: 20px;
-       margin-left: 0px;
-       margin-right: 0px;
-     }
-
-     .roundedimg{
-      width: 200px;
-      border-radius: 5px;
-     }
-
-     .squareimg{
-      width: 200px;
-      height: 200px;
-      object-position: center;
-     }
-
-     .circleimg{
-      width: 200px;
-      height: 200px;
-      border-radius: 100px;
-     }
-
-     .tahoma-font{
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      font-size:large;
-      font-weight: bold;
-     }
-
-     .arial-font{
-      font-family: Arial, Helvetica, sans-serif;
-     }
-
-     .arial-black{
-      font-weight: 700;
-      font-size: large;
-     }
-
-     .arial-red{
-      color: rgb(225, 45, 45);
-      font-style:italic;
-     }
-
-     .verdana-font{
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-     }
-
-     .verdana-black{
-      font-weight: 600;
-      font-size: 16px;
-     }
-
-     .verdana-gray{
-      font-weight: 400;
-      color: gray;
-      font-size: 14px;
-      margin-bottom: 14px;
-     }
-
-     .verdana-width{
-      width: 300px;
-      margin-bottom: 12px;
-     }
-
-     .verdana-button{
-      border: none;
-      color: white;
-      background-color: rgb(7, 140, 7);
-      height: 20px;
-      width: 80px;
-      border-radius: 4px;
-      font-size: 11px;
-      cursor: pointer;
-     }
-
-     .verdana-button:active{
-       opacity: 0.6;
-     }
-
-     .arial-black-apple{
-      font-weight: 700;
-      font-size: 20px;
-      text-align: center;
-      margin-bottom: 12px;
-     }
-
-     .arial-text-apple{
-      text-align: center;
-      font-size: 12px;
-      margin-bottom: 12px;
-     }
-
-     .arial-link-apple{
-      color: rgb(45, 45, 253);
-      text-align: center;
-      font-size: 12px;
-      cursor: pointer;
-     }
-
-     .arial-link-apple:hover{
-      text-decoration: underline;
-     }
-
-     .arial-link-apple:active{
-       opacity: 0.6;
-     }
-
-   </style>
+    <link rel="stylesheet" href="styles/assignments.css">
   </head>
   <body>
     <button class="uber-button">
@@ -386,7 +33,7 @@
       Save
     </button>
     
-    <hr/>
+    <hr>
     
     <a class='amazon-link' href="" >Back to Amazon</a>
     <h2>Nike Black Running Shoes</h2>
@@ -401,7 +48,7 @@
       Buy now
     </button>
     
-    <hr/>
+    <hr>
     
     <button class="pagination-button">Back</button>
     <a href="">1</a>
@@ -410,6 +57,8 @@
     <a href="">4</a>
     <a href="">5</a>
     <button class="pagination-button">Next</button>
+
+    <hr>
     
     <button class="stretch-button">Stretch</button>
     
@@ -419,22 +68,24 @@
     <button class="margin-padding-button">Two</button>
     <button class="margin-padding-button">Three</button>
     
-    <hr/>
+    <hr>
     
-    <img class='roundedimg' src="./thumbnail-1.webp">
-    <img class='squareimg' src="./thumbnail-1.webp">
-    <img class='circleimg' src="./thumbnail-1.webp">
+    <img class='roundedimg' src="../thumbnails/thumbnail-1.webp">
+    <br>
+    <img class='squareimg' src="../thumbnails/thumbnail-1.webp">
+    <br>
+    <img class='circleimg' src="../thumbnails/thumbnail-1.webp">
 
-    <hr/>
+    <hr>
 
     <div class="tahoma-font">This is Tahoma Font</div>
-    <hr/>
+    <hr>
 
     <div class="arial-font">
     <p class="arial-black">Biggest Deals of the Year!</p>
     <p class="arial-red">Sales end Tuesday</p>
     </div>
-    <hr/>
+    <hr>
 
     <div class="verdana-font">
       <p class="verdana-black">HTML CSS Course</p>
@@ -442,17 +93,24 @@
       <p class="verdana-width">In this course, we'll learn the skills you need to become a developer.</p>
       <button class="verdana-button">Get Started</button>
     </div>
-    <hr/>
+    <hr>
 
     <div class="arial-font">
       <p class="arial-black-apple">Shopping for your business?</p>
       <p class="arial-text-apple">See how apple at Work can help.</p>
       <p class="arial-link-apple">Learn more &#62 </p>
     </div>
-    <hr/>
+    <hr>
+
+    <span class="new-class-mbp">New</span>
+    <span class="h3-text-class-mbp">MacBook Pro</span>
+    <span class="h1-text-class-mbp">Supercharged for pros.</span>
+    <span class="price-mbp">From $1999</span>
+    <div class="div-buy-mbp">
+      <button class="buy-mbp">Buy</button>
+    </div>
+    
+    <hr>
     </body>
   </body>
 </html>
-
-
-
